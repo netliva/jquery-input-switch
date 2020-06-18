@@ -1,0 +1,36 @@
+{
+  "name": "@netliva/jquery-input-switch",
+  "version": "0.1.0",
+  "description": "jQuery toggle switch input component",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss-build": "node-sass src/scss -o src/css",
+    "scss-watch": "node-sass --watch src/scss -o src/css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/netliva/jquery-input-switch.git"
+  },
+  "keywords": [
+    "jquery",
+    "input",
+    "switch",
+    "toggle",
+    "css",
+    "input",
+    "switch"
+  ],
+  "author": "Netliva",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/netliva/jquery-input-switch/issues"
+  },
+  "homepage": "https://github.com/netliva/jquery-input-switch#readme",
+  "dependencies": {
+    "jquery": "^1.7 || ^2.0 || ^3.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.14.1"
+  }
+}
