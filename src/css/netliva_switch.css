@@ -1,5 +1,7 @@
 .netliva-switch {
-  display: inline-block; }
+  display: inline-block;
+  vertical-align: middle;
+}
 
 .netliva-switch input[type=checkbox] {
   height: 0;
