@@ -1,6 +1,6 @@
 {
   "name": "@netliva/jquery-input-switch",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "jQuery toggle switch input component",
   "main": "index.js",
   "scripts": {
@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/netliva/jquery-input-switch#readme",
   "dependencies": {
-    "jquery": "^1.7 || ^2.0 || ^3.1"
+    "jquery": ">=3.5.0"
   },
   "devDependencies": {
     "node-sass": "^4.14.1"
