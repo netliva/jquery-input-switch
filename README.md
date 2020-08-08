@@ -33,22 +33,31 @@ or add inline
 ## Usage
 
 #### Basic Usage
-![Basic Usage](https://github.com/netliva/jquery-input-switch/blob/master/readme_assets/01.png?raw=true)
+![Basic Usage](https://github.com/netliva/jquery-input-switch/blob/master/readme_assets/07.png?raw=true)
 ```html
 <input type="checkbox" netliva-switch />
 <input type="checkbox" netliva-switch checked />
 ```
 
-#### Mini Usage
-![Mini Usage](https://github.com/netliva/jquery-input-switch/blob/master/readme_assets/02.png?raw=true)
+#### Sizes
+
+##### Small Usage
+![Small Usage](https://github.com/netliva/jquery-input-switch/blob/master/readme_assets/02.png?raw=true)
 ```html
-<input type="checkbox" netliva-switch data-size="mini" />
-<input type="checkbox" netliva-switch data-size="mini" checked />
+<input type="checkbox" netliva-switch data-size="small" />
+<input type="checkbox" netliva-switch data-size="small" checked />
+```
+##### Large Usage
+![Large Usage](https://github.com/netliva/jquery-input-switch/blob/master/readme_assets/01.png?raw=true)
+```html
+<input type="checkbox" netliva-switch data-size="large" />
+<input type="checkbox" netliva-switch data-size="large" checked />
 ```
 
 #### Change Text And Color
-![Change Text And Color](https://github.com/netliva/jquery-input-switch/blob/master/readme_assets/03.png?raw=true)
-![Change Text And Color Mini Usage](https://github.com/netliva/jquery-input-switch/blob/master/readme_assets/04.png?raw=true)
+![Change Text And Color Large](https://github.com/netliva/jquery-input-switch/blob/master/readme_assets/03.png?raw=true)
+![Change Text And Color](https://github.com/netliva/jquery-input-switch/blob/master/readme_assets/08.png?raw=true)
+![Change Text And Color Small Usage](https://github.com/netliva/jquery-input-switch/blob/master/readme_assets/04.png?raw=true)
 ```html
 <input type="checkbox"
        netliva-switch
@@ -59,7 +68,7 @@ or add inline
 />
 <input type="checkbox"
        netliva-switch
-       data-size="mini"
+       data-size="small"
        data-active-text="On"
        data-passive-text="Off"
        data-active-color="#0A0"
@@ -80,7 +89,7 @@ If you use bootstrapp or color css variable, you can use variable name for color
 ```
 
 #### Disabled Usage
-![Mini Usage](https://github.com/netliva/jquery-input-switch/blob/master/readme_assets/05.png?raw=true)
+![Disable Usage](https://github.com/netliva/jquery-input-switch/blob/master/readme_assets/05.png?raw=true)
 ```html
 <input type="checkbox"
        netliva-switch
@@ -96,7 +105,7 @@ If you use bootstrapp or color css variable, you can use variable name for color
 <script type="text/javascript">
 	jQuery(function ($){
 		$("#example-input").netlivaSwitch({
-			'size': 'mini',
+			'size': 'small',
 			'active-text': 'On',
 			'passive-text': 'Off',
 			'active-color': '#0f9983',

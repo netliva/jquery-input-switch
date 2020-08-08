@@ -11,10 +11,10 @@
 
 .netliva-switch label {
   cursor: pointer;
-  font-size: 14px;
   text-indent: -9999px;
   width: 60px;
-  height: 30px;
+  height: 22px;
+  font-size: 12px;
   --switch-passive-color: #bbb;
   background: var(--switch-passive-color);
   display: block;
@@ -34,8 +34,8 @@
   position: absolute;
   top: 2px;
   left: 2px;
-  width: 26px;
-  height: 26px;
+  height: 18px;
+  width: 18px;
   background: #fff;
   border-radius: 90px;
   transition: 0.3s; }
@@ -50,44 +50,72 @@
 
 .netliva-switch input + label:before {
   content: attr(data-passive-text);
-  left: 30px;
-  right: 10px;
   text-align: right;
   justify-content: flex-end;
-  top: 5px;
-  bottom: 5px;
   display: flex;
   align-items: center;
   position: absolute;
   transition: 0.3s;
   text-indent: 0;
   color: #fff;
-  font-size: 14px; }
+  top: 2px;
+  bottom: 1px;
+  font-size: 12px;
+  left: 12px;
+  right: 10px;
+
+}
 
 .netliva-switch input:checked + label:before {
   content: attr(data-active-text);
-  left: 10px;
-  right: 30px;
+  left: 8px;
+  right: 12px;
   text-align: left;
   justify-content: flex-start; }
 
-.netliva-switch input[data-size="mini"] + label {
-  height: 16px; }
+/* SMALL SIZE */
+.netliva-switch input[data-size="small"] + label
+{
+  height: 16px; font-size: 10px;
+}
 
-.netliva-switch input[data-size="mini"] + label:after {
+.netliva-switch input[data-size="small"] + label:after {
   height: 12px;
   width: 12px; }
 
-.netliva-switch input[data-size="mini"] + label::before {
+.netliva-switch input[data-size="small"] + label::before {
   top: 1px;
   bottom: 1px;
   font-size: 10px;
   left: 10px;
   right: 5px; }
 
-.netliva-switch input[data-size="mini"]:checked + label:before {
+.netliva-switch input[data-size="small"]:checked + label:before {
   left: 5px;
   right: 10px; }
 
-.netliva-switch input[data-size="mini"] + label {
-  font-size: 10px; }
+
+/* LARGE SIZE */
+.netliva-switch input[data-size="large"] + label {
+  font-size: 14px;
+  height: 30px;
+}
+
+.netliva-switch input[data-size="large"] + label:after {
+  width: 26px;
+  height: 26px;
+}
+
+.netliva-switch input[data-size="large"] + label::before {
+  left: 30px;
+  right: 10px;
+  top: 5px;
+  bottom: 5px;
+  font-size: 14px;
+}
+
+.netliva-switch input[data-size="large"]:checked + label:before {
+  left: 10px;
+  right: 30px;
+}
+
